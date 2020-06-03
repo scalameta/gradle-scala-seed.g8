@@ -1,0 +1,17 @@
+plugins {
+    // Apply the scala plugin to add support for Scala
+    id 'scala'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    // Use Scala 2.12 in our library project
+    implementation 'org.scala-lang:scala-library:$scala_version$'
+
+    // Use Munit for testing our library
+    testImplementation 'org.scalameta:munit_2.13:$munit_version$'
+}
